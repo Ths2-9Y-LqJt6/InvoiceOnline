@@ -32,9 +32,7 @@ $(document).ready(function () {
 
 setCurrency = function () {
     var currency = $('#currency').val();
-    $('.currency').attr('data-before', 'annything');
     $('.currency').append('<style>.currency:before{content:"' + currency + '";}</style>');
-    console.log('currency set: ' + currency);
 };
 
 appendItem = function () {
