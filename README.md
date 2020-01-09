@@ -5,6 +5,15 @@ paper. See [live demo](https://plip.com/InvoiceOnline)!
 
 ## Use
 
+Simple, but less private:
+
+1. [Open live demo](https://plip.com/InvoiceOnline)
+1. Add line items and fill out each line's detail.. Adding a new line item uses the prior lines item price.
+1. Print and send
+1. Profit! 
+
+Complex, but data never leaves computers you control:
+
 1. Download this repo
 1. Open `index.html` in a browser
 1. Add line items and fill out each line's detail.. Adding a new line item uses the prior lines item price.
