@@ -107,6 +107,15 @@
     .w100 description {
         max-width: 390px;
     }
+
+    #top-tools-item {
+        padding-top: 85px;
+    }
+
+    #currency {
+        height: 26px;
+        margin-top: 4px;
+    }
 }
 
 #forkongithub a {
@@ -211,7 +220,7 @@
         width: 100%;
         display: table;
     }
-    .col-sm-8 {
+    .col-sm-9 {
         width: 100%;
     }
 }
