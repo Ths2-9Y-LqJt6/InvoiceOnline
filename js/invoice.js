@@ -28,7 +28,35 @@ $(document).ready(function () {
     $('#setCurrency').on('click', function () {
         setCurrency();
     });
+    $('#hide_logo').on('click', function () {
+        showLogo(false);
+    });
+    $('#show_logo').on('click', function () {
+        showLogo(true);
+    });
+    $('#logo_slider').on('input change', function(){
+        updateLogoWidth(this.value)
+    });
 });
+
+updateLogoWidth = function (width) {
+    $('#logo img').css('width', width + '%');
+};
+
+logoUrlError = function () {
+    $('.logo_url_outer').addClass('glow');
+}
+showLogo = function (makeVisible) {
+    var url = $('#logo_url').val();
+    $('.logo_url_outer').removeClass('glow');
+    if(makeVisible && (url == undefined || url == '')) {
+        logoUrlError();
+    } else if(makeVisible) {
+        $('#logo img').attr('src', url).delay( 100 ).slideDown();
+    } else {
+        $('#logo img').slideUp();
+    }
+};
 
 setCurrency = function () {
     var currency = $('#currency').val();

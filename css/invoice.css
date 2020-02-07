@@ -80,19 +80,37 @@
     }
 
     #invoice_title {
-        font-size: 45px;
+        font-size: 35px;
         font-weight: bold;
-        text-align: right;
+        text-align: center;
     }
 
     .info {
         color: rgb(187, 187, 187);
     }
 
-    #tools {
+    .tools {
         background-color: #3C5069;
         padding: 20px;
         margin-top: 25px;
+        color: rgba(187, 187, 187, 1.0);
+    }
+    .tools input {
+        color: black;
+    }
+    #logo img {
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+        display: none;
+    }
+    #logo_width_label {
+        float:left;
+        width: 25%
+    }
+    #logo_slider {
+        float:right;
+        width: 75%
     }
 
     #tax {
@@ -116,38 +134,44 @@
         height: 26px;
         margin-top: 4px;
     }
+
+    #forkongithub a {
+        background:#000;
+        color:#ddd;
+        text-decoration:none;
+        font-family:arial,sans-serif;
+        text-align:center;
+        font-weight:bold;
+        padding:5px 40px;
+        font-size:1.3rem;
+        line-height:2rem;
+        position:relative;
+        transition:0.5s;
+    }
+    #forkongithub a:hover{background:#c11;
+        color:#fff;
+    }
+    #forkongithub a::before,#forkongithub a::after{
+        content:"";
+        width:100%;
+        display:block;
+        position:absolute;
+        top:1px;
+        left:0;
+        height:1px;
+        background:#fff;
+    }
+    #forkongithub a::after{
+        bottom:1px;
+        top:auto;
+    }
+    .glow {
+        outline: none;
+        border-color: yellow;
+        box-shadow: 0 0 20px yellow;
+    }
 }
 
-#forkongithub a {
-    background:#000;
-    color:#ddd;
-    text-decoration:none;
-    font-family:arial,sans-serif;
-    text-align:center;
-    font-weight:bold;
-    padding:5px 40px;
-    font-size:1.3rem;
-    line-height:2rem;
-    position:relative;
-    transition:0.5s;
-}
-#forkongithub a:hover{background:#c11;
-    color:#fff;
-}
-#forkongithub a::before,#forkongithub a::after{
-    content:"";
-    width:100%;
-    display:block;
-    position:absolute;
-    top:1px;
-    left:0;
-    height:1px;
-    background:#fff;
-}
-#forkongithub a::after{
-    bottom:1px;
-    top:auto;
-}
 @media screen and (min-width:800px)
 {
     #forkongithub {

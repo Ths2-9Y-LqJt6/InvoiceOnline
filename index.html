@@ -54,8 +54,12 @@
                         </tbody>
                     </table>
                 </div>
-
-                <div id="invoice_title" class="col-xs-6">INVOICE</div>
+                <div id="invoice_title" class="col-xs-6">
+                    <div id="logo">
+                        <img src="" />
+                    </div>
+                    INVOICE
+                </div>
             </div>
 
             <div id="section2" class="row">
@@ -182,19 +186,34 @@
         </div>
 
 
-        <div class="col-sm-3 hidden-print " id="top-tools-item">
-
-            <div class="col-sm-4">
+        <div class="col-sm-3 hidden-print" id="top-tools-item">
+            <div class="tools">
+                <p>
                 <input type="text" value="$" id="currency" size="5" maxlength="10" name="currency">
-            </div>
-            <div class=" col-sm-8 ">
+                </p>
                 <button class="btn btn-success btn-block" id="setCurrency">Set Currency</button>
             </div>
 
         </div>
-        <div class="col-sm-3 hidden-print">
 
-            <div id="tools">
+
+        <div class="col-sm-3 hidden-print"   >
+            <div class="tools">
+                <p class="col-sm logo_url_outer">
+                    <input type="text" value="" id="logo_url" placeholder="Logo URL" name="logo_url" >
+                </p>
+                <p>
+                    <label id="logo_width_label" for="range_logo_width">Size: </label>
+                    <input type="range" name="logo_width"  id="logo_slider" min="0" max="100" value="30">
+                </p>
+                <button class="btn btn-success btn-block" id="show_logo">Show</button>
+                <button class="btn btn-success btn-block" id="hide_logo">Hide</button>
+
+            </div>
+        </div>
+
+        <div class="col-sm-3 hidden-print">
+            <div class="tools">
                 <button class="btn btn-success btn-block" onclick="window.print()">
                     <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
                 </button>
