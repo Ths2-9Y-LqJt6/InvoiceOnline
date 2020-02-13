@@ -20,7 +20,7 @@ Complex, but data never leaves computers you control:
 1. Print and send
 1. Profit! 
 
-Optionally, you could have the 2nd step above be "put in web accessible directory", but this app works both with and with a web server.  The simplicity of just HTML/CSS/JavaScript!!
+Optionally, you could have the 2nd step above be "put in web accessible directory" as this app works both with and without a web server.  The simplicity of just HTML/CSS/JavaScript!!
 
 **Note** -  This does not support saving and editing old invoice.  Just simple one off invoice creating ;)
 
